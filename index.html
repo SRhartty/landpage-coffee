@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RocketCoffee</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerdesk">
+            <img src="./assets/logo-desktop.svg" alt="">
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">Recompensas</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Lojas</a>
+            </div>
+
+            <div>
+                <a class="pegarcafe" href="#">Pegar meu café</a>
+            </div>
+        </div>
+        <div class="headermobile">
+            <a href="#"><img src="./assets/logo-mobile.svg" alt=""></a>
+            <div class="menumobile" id="myLinks">
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">Recompensas</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Lojas</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img id="open" src="./assets/menu-buguer-open.svg" alt="">
+                <img id="close" src="./assets/menu-buguer-close.svg" alt="">
+            </a>
+
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                var y = document.getElementById("open");
+                var z = document.getElementById("close");
+                var p = document.getElementById("p")
+                var a = document.getElementById("a")
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                    y.style.display = "inline";
+                    z.style.display = "none";
+                    p.style.marginBottom = "100px";
+                    p.style.marginTop = "100px";
+                    a.style.marginBottom = "100px";
+                    a.style.marginTop = "100px";
+
+                } else {
+                    x.style.display = "block";
+                    y.style.display = "none";
+                    z.style.display = "inline";
+                    p.style.marginBottom = "50px";
+                    p.style.marginTop = "50px";
+                    a.style.marginBottom = "50px";
+                    a.style.marginTop = "50px";
+                    
+                }
+            }
+        </script>
+
+    </header>
+    <div class="centromobile">
+        <p id="p">O café que fará seu código decolar para
+            o próximo nível.</p>
+
+        <a id="a" class="pegarcafe" href="#">Pegar meu café</a>
+
+    </div>
+    <div class="coffedescri">
+        <h1>Great Coffee</h1>
+        <h2>&lt; Great Code/&gt;</h2>
+        <div class="cafe">
+            <img src="./assets/rocket-coffee.png" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
